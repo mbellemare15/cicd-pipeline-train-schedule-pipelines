@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh './gradlew build'
-                archiveArtifacts artifacts: 'dst/trainSchedule.zip'
+                archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
     }
